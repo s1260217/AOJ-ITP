@@ -1,7 +1,9 @@
 #include<stdio.h>
+#include<math.h>
+
 int main(){
-  double f;
-  scanf("%lf",&f);
-  printf("%lf %lf\n",f*f*3.14,2*f*3.14);
+  double r;
+  scanf("%lf",&r);
+  printf("%lf %lf",M_PI*r*r,2*M_PI*r);
   return 0;
 }
