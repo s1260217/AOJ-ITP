@@ -27,11 +27,6 @@ int main(){
       b = c;
       c = t;
       printf("%d %d %d\n",a,b,c);
-  }else if(a > c){
-    int t = a;
-    a = c;
-    c = t;
-    printf("%d %d %d\n",a,b,c);
   }
   return 0;
 }
