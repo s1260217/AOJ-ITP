@@ -1,13 +1,8 @@
 #include<stdio.h>
 
 int main(){
-  int a,b;
   int d,r;
-  float f;
-  scanf("%d %d",&a,&b);
-  d = a/b;
-  r = a%b;
-  f = a%b;
-  printf("%d %d %f\n",d,r,f);
+  scanf("%d %d",&d,&r );
+  printf("%d %d %lf\n",d/r,d%r,(double)d/r);
   return 0;
 }
