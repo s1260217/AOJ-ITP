@@ -1,16 +1,21 @@
 #include<stdio.h>
 
 int main(){
-  int x,y;
-  while(1){
-  scanf("%d %d",&x,&y);
-    if(x == 0 && y == 0) break;
-  if(x < y){
-    printf("%d %d\n",x,y);
-  }else if(x > y){
-    printf("%d %d\n",y,x);
-  }
-  
+  int a,b;
+  int temp;
+  int i;
+
+  for(i = 0; i < 100000; i++){
+    scanf("%d %d",&a,&b);
+
+    if(a == 0 && b == 0) break;
+
+    if(a > b){
+      temp = a;
+      a = b;
+      b = temp;
+    }
+    printf("%d %d\n",a,b);
   }
   return 0;
 }
