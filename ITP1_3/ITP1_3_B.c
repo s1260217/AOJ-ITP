@@ -2,12 +2,14 @@
 
 int main(){
   int x;
-  while(1){
+  int i;
+
+  for(i = 0 ; i < 100000; i++){
     scanf("%d",&x);
-    if(x == 0)
-      break;
-    printf("Case i: %d\n",x);
-    
+    if(x == 0) break;
+
+    printf("Case %d: %d\n",i+1,x);
   }
+
   return 0;
 }
