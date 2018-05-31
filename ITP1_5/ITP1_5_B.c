@@ -19,7 +19,7 @@ int main() {
       }
       printf("\n");
     }
-    printf("\n");
+    printf("\n");  //すべての処理が終ったあと改行が必要
   }
   return 0;
 }
