@@ -1,20 +1,26 @@
 #include<stdio.h>
-int main(){
+
+int main() {
+  int i,j;
+  int h,w;
+
   while(1){
-    int i,j,H,W;
-  scanf("%d %d ",&H,&W);
-  if(H == 0 && W == 0) break;
-  for(i = 0; i <= H; i++){
-    for(j = 0; j < W; j++){
-      if(i == 1 || i ==H || j == 1 || j == W){
-	printf("#");
-      }else {
-	printf(".");
-	  }
+    scanf("%d %d",&h,&w);
+
+    if(h == 0 && w == 0) break;
+
+    for(i = 0; i < h; i++){
+      for(j = 0; j < w; j++){
+        if(i == 0 || i == h - 1 || j == 0 || j == w - 1){
+	  printf("#");
+	}else {
+	  printf(".");
+	}
+      }
+      printf("\n");
     }
     printf("\n");
   }
   return 0;
-  }
 }
   
