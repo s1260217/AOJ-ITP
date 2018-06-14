@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main () {
   int n;
-  char p,dummy;    //char型は文字列を入れる型
+  char p;    //char型は文字列を入れる型
   int input;
   int arr[4][13];   //int[a][b]でa*bの二次元配列に記録する
   int i,j;
@@ -14,7 +14,6 @@ int main () {
 
   scanf("%d",&n);
   for(i = 0; i < n; i++){
-    scanf("%c",&dummy);
     scanf("%c %d",&p,&input);
     switch(p){
     case 'S':
