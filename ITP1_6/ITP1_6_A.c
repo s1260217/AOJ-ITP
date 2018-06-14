@@ -10,7 +10,7 @@ int main () {
     scanf("%d",&input);
     arr[i] = input;
     }
-  for(j = i - 1; j >= 0; j--){
+  for(j = i - 1; j >= 0; j--){  //上のfor文で増えた変数iの値はここのfor文でも引き継がれる
     printf("%d",arr[j]);
     if(j != 0){
       printf(" ");
