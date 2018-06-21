@@ -14,12 +14,11 @@ int main () {
     }else if(m + f >=30 && m + f < 50){
       if(r >= 50){
 	printf("C\n");
-      }
-      if(r < 50){
+      }else if(r < 50){
 	printf("D\n");
+      }
       }else if(m + f < 30){
 	printf("F\n");
-      }
     }
   }
   return 0;
