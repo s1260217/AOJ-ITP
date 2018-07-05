@@ -3,6 +3,7 @@ int main () {
   int m,f,r;
   while(1){
     scanf("%d %d %d",&m,&f,&r);
+    if (m == -1 && f == -1 && r == -1) break;
     if (m == -1 || f == -1){
       printf("F\n");
     }else if(m + f >= 80){
