@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main()
+{
+  int a[101][101];
+  int r,c;
+  int i,j;
+  scanf("%d %d",&r,&c);
+  for(i = 0; i < c; i++){
+    for(j= 0; j < r; j++){
+      scanf("%d",&a[j][i]);
+    }
+  }
+  printf("%d",a[j][i]);
+  return 0;
+}
