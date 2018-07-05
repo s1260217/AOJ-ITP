@@ -13,11 +13,11 @@ int main (){
 	for(k = j+1; k <= n; k++){
 	  if (i+j+k == x){
 	    cnt++;
-	    printf("%d\n",cnt);
 	  }
 	}
       }
     }
   }
+  printf("%d\n",cnt);
   return 0;
 }
