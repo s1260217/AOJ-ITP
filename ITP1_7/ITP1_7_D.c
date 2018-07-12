@@ -6,7 +6,7 @@ int main()
   int i,j,k;
   int a[101][101];
   int b[101][101];
-  int c[101][101];
+  long long int c[101][101];
   scanf("%d %d %d",&n,&m,&l);
   for(i = 0; i < n; i++){
     for(j = 0; j < m; j++){
@@ -26,8 +26,8 @@ int main()
       c[i][j] += a[i][k] * b[k][j];
       }
       if(j!=l-1)
-         printf("%d ",c[i][j]);
-      else printf("%d\n",c[i][j]);
+         printf("%lld ",c[i][j]);
+      else printf("%lld\n",c[i][j]);
       }
    
   }
