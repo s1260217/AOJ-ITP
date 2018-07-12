@@ -25,9 +25,11 @@ int main()
       for(k=0; k < m; k++){
       c[i][j] += a[i][k] * b[k][j];
       }
+      if(j!=l-1)
          printf("%d ",c[i][j]);
+      else printf("%d\n",c[i][j]);
       }
-    printf("\n");
+   
   }
   
   return 0;
