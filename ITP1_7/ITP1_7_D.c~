@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main()
+{
+  int n,m,l;
+  int i,j;
+  int a[101][101];
+  int b[101][101];
+  int c[101[]101];
+  scanf("%d %d %d",&n,&m,&l);
+  for(i = 0; i < n; i++){
+    for(j = 0; j < l; j++){
+      scanf("%d",&a[i][j]);
+    }
+  }
+  for(i = 0; i < m; i++){
+    for(j = 0; j < l; j++){
+      scanf("%d",&b[i][j]);
+    }
+  }
+  //行列Aと行列Bの読込までは書き終ったが、そこから行列Cを求めて出力が出来てない
+  for(i = 0; i < n; i++){
+    for(j = 0; j < l; j++){
+    c[i][j] = a[i][j]}}
+  return 0;
+}
